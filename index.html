@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Ávila Instalação Hidráulica</title>
+<link rel="icon" href="img\logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="img\logo.png" alt="Logo Ávila Hidráulica" class="logo-img">
+<h1>Ávila Instalação Hidráulica</h1> 
+<p>Excelência e Tradição desde 1990</p>
+</div>
+<nav>
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#fotos">Fotos</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="sobre">
+<h2>Sobre a Empresa</h2>
+<p>A Ávila Instalação Hidráulica foi fundada em 1993 por Sandro Moisés Ávila, um profissional que trabalha com hidráulica desde os 16 anos de idade. Após o falecimento de seu patrão, Sandro começou a atuar de forma independente, oferecendo serviços de alta qualidade em reparos e instalações hidráulicas.</p>
+<p>Sandro nasceu em 1977 e é pai de 6 filhos, sendo 3 meninas e 3 meninos. Em 2006, conheceu sua esposa, formada em Administração pela FMP, que hoje é responsável pela parte administrativa da empresa.</p>
+</section>
+
+<section id="servicos">
+<h2>Serviços</h2>
+<ul>
+<li>Instalação e manutenção de sistemas hidráulicos</li>
+<li>Reparos e desentupimentos</li>
+<li>Consultoria e manutenção preventiva</li>
+<li>Projetos hidráulicos personalizados</li>
+</ul>
+</section>
+
+<section id="fotos">
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria-wrapper">
+      <button class="scroll-btn left" onclick="scrollGaleria(-1)">&#8592;</button>
+  
+      <div class="galeria-container" id="galeria">
+        <div class="foto-item">
+          <img src="img/trabalho (1).jpg" alt="Trabalho 1" class="foto">
+          <p class="foto-legenda">Instalação de torneiras</p>
+        </div>
+        <div class="foto-item">
+          <img src="img/trabalho (2).jpg" alt="Trabalho 2" class="foto">
+          <p class="foto-legenda">Tubulação em rede de incêndio</p>
+        </div>
+        <div class="foto-item">
+          <img src="img/trabalho (3).jpg" alt="Trabalho 3" class="foto">
+          <p class="foto-legenda">Tubulação em garagem</p>
+        </div>
+        <div class="foto-item">
+          <img src="img/trabalho (4).jpg" alt="Trabalho 4" class="foto">
+          <p class="foto-legenda">Instalação de hidrômetros</p>
+        </div>
+        <div class="foto-item">
+          <img src="img/trabalho (5).jpg" alt="Trabalho 5" class="foto">
+          <p class="foto-legenda">Instalação de acabamentos</p>
+        </div>
+      </div>
+  
+      <button class="scroll-btn right" onclick="scrollGaleria(1)">&#8594;</button>
+    </div>
+  </section>
+
+<section id="contato">
+     <h2>Contato</h2>
+        <p>Entre em contato diretamente pelo WhatsApp:</p>
+        <a href="https://wa.me/554899416166" target="_blank" class="whatsapp-btn">
+            <img src="img\logo-whats.png" alt="WhatsApp" class="whatsapp-icon">
+            Fale Conosco no WhatsApp
+        </a>
+    </section>
+<script>
+        function scrollGaleria(direction) {
+          const galeria = document.getElementById('galeria');
+          const scrollAmount = 220;
+          galeria.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+          });
+        }
+</script>
+<footer>
+<p>&copy; 2025 Ávila Instalação Hidráulica | Desde 1990 </p>
+</footer>
+</body>
+</html>
